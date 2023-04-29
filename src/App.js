@@ -1,10 +1,16 @@
+import SignIn from "./component/signIn/SignIn";
+import SignUp from "./component/signUp/SignUp";
+import UserContextProvider from "./state/context/userContext/UserContextProvider";
 import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <UserContextProvider>
+      <div className="App">
+        <div>
+          <SignUp />
+        </div>
+      </div>
+    </UserContextProvider>
   );
 }

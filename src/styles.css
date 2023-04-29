@@ -1,4 +1,12 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #8860d0;
+  --secondary-color: #84ceeb;
+  --error-color: #ce0606;
+  --success-color: #009070;
+  --white-color: #ffffff;
+  --black-color: #000000;
 }
